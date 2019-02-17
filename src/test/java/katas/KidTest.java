@@ -14,13 +14,13 @@ public class KidTest {
     @Test
     public void getKidNameShouldReturnNamesOfAllKidsFromNorway() {
         Person sara = new Person("Sara", 4);
-        Person viktor = new Person("Viktor", 40);
+        Person victor = new Person("Victor", 40);
         Person eva = new Person("Eva", 42);
         Person anna = new Person("Anna", 5);
-        List<Person> collection = asList(sara, eva, viktor, anna);
+        List<Person> collection = asList(sara, eva, victor, anna);
         assertThat(getKidNames(collection))
                 .contains("Sara", "Anna")
-                .doesNotContain("Viktor", "Eva");
+                .doesNotContain("Victor", "Eva");
     }
 
 }

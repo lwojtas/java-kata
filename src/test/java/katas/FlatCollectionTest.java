@@ -12,8 +12,8 @@ public class FlatCollectionTest {
 
     @Test
     public void transformShouldFlattenCollection() {
-        List<List<String>> collection = asList(asList("Viktor", "Farcic"), asList("John", "Doe", "Third"));
-        List<String> expected = asList("Viktor", "Farcic", "John", "Doe", "Third");
+        List<List<String>> collection = asList(asList("Victor", "Farcic"), asList("John", "Doe", "Third"));
+        List<String> expected = asList("Victor", "Farcic", "John", "Doe", "Third");
         assertThat(transform(collection)).hasSameElementsAs(expected);
     }
 
