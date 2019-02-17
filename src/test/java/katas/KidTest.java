@@ -12,7 +12,7 @@ import static katas.Kid.getKidNames;
 public class KidTest {
 
     @Test
-    public void getKidNameShouldReturnNamesOfAllKidsFromNorway() {
+    public void getKidNameShouldReturnNamesOfAllKids() {
         Person sara = new Person("Sara", 4);
         Person victor = new Person("Victor", 40);
         Person eva = new Person("Eva", 42);
